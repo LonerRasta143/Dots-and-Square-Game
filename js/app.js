@@ -1,4 +1,3 @@
-
 const board = document.getElementById("board");
 const currentPlayerSP = document.getElementById("current-player")
 const p1ScoreSp = document.getElementById("p1-score");
@@ -7,20 +6,15 @@ const SIZE = 3;
 const horizontal = [];
 const vertical = [];
 const boxes = [];
-
 let currentPlayer = 1;
 let p1Score = 0;
 let p2Score = 0;
-
-
-
 //init game
 init();
 
 function init() {
     setUpArrays();
     createBoard();
-
 }
 
 function setUpArrays() {
@@ -32,7 +26,6 @@ function setUpArrays() {
             vertical[r][c] = false;
         }
     }
-
     for (let r = 0; r < SIZE; r++) {
         boxes[r] = [];
         for (let c = 0; c < SIZE; c++) {
@@ -55,7 +48,7 @@ function createBoard() {
         for (let c = 0; c < SIZE; c++) {
             const line = document.createElement("div")
             line.className = "horline";
-            line.style.top = `${r * 200 + 50 }px`;
+            line.style.top = `${r * 200 + 50}px`;
             line.style.left = `${c * 200 + 50 + 12}px`;
             line.addEventListener("click", () => clickHorLine(r, c, line));
             board.appendChild(line);
@@ -71,49 +64,35 @@ function createBoard() {
             board.appendChild(line);
         }
     }
-
-
 }
 //able to switch player
 function switchPlayer() {
     currentPlayer = currentPlayer === 1 ? 2 : 1;
     currentPlayerSP.textContent = `Player ${currentPlayer}`;
-
 }
-
-
 //make lines functional
 function clickHorLine(r, c, line) {
     if (horizontal[r][c]) return;
     horizontal[r][c] = true;
     line.classList.add("active");
-
     if (!checkBoxes()) switchPlayer();
 }
 
-function clickVerLine(r,c, line) {
+function clickVerLine(r, c, line) {
     if (vertical[r][c]) return;
-    vertical[r][c]= true
+    vertical[r][c] = true
     line.classList.add("active")
-
-    if(!checkBoxes()) switchPlayer();
+    if (!checkBoxes()) switchPlayer();
 }
 //checking for score
 function checkBoxes() {
     let scored = false
-
-    for(let r=0; r < SIZE; r++){
-        for(let c=0; c<SIZE; c++){
-            if(
-                !boxes[r][c] &&
-                horizontal[r][c]&&
-                horizontal[r+1][c]&&
-                vertical[r][c]&&
-                vertical[r][c+1]
-            ){
+    for (let r = 0; r < SIZE; r++) {
+        for (let c = 0; c < SIZE; c++) {
+            if (!boxes[r][c] && horizontal[r][c] && horizontal[r + 1][c] && vertical[r][c] && vertical[r][c + 1]) {
                 boxes[r][c] = true;
-                claimBox(r,c);
-                scored=true;
+                claimBox(r, c);
+                scored = true;
             }
         }
     }
@@ -122,15 +101,13 @@ function checkBoxes() {
 //claim the box
 function claimBox(r, c) {
     const box = document.createElement("div")
-    box.className= "box";
-    box.textContent= `P${currentPlayer}`;
-    box.style.top=`${r * 200 + 90}px`;
-    box.style.left= `${c * 200 + 90}px`;
+    box.className = "box";
+    box.textContent = `P${currentPlayer}`;
+    box.style.top = `${r * 200 + 90}px`;
+    box.style.left = `${c * 200 + 90}px`;
     board.appendChild(box);
-
-    if(currentPlayer === 1) p1Score++
+    if (currentPlayer === 1) p1Score++
     else p2Score++
-
     updateScore();
 }
 //update score
@@ -138,7 +115,6 @@ function updateScore() {
     p1ScoreSp.textContent = p1Score;
     p2ScoreSp.textContent = p2Score;
     checkForWinnerTie();
-
 }
 //check for winner
 function checkForWinnerTie() {

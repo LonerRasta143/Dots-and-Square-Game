@@ -39,6 +39,7 @@ Game Link: [PLAY HERE](https://lonerrasta143.github.io/Dots-and-Square-Game/)
 - Css
 - JS
 - HTML
+- [dirtyMarkup](https://www.10bestdesign.com/dirtymarkup/)
 
 
 ### Helpful mdn used:
