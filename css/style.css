@@ -6,10 +6,13 @@ body {
     align-items: center;
     padding: 20px;
 }
+h2{
+    text-align: center;
+}
 
 #game-info {
     color: rgb(9, 2, 17);
-    text-align: end;
+    text-align: center;
     text-decoration: underline overline #000;
 }
 

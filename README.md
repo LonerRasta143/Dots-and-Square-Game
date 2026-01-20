@@ -12,7 +12,7 @@ Game Link: [PLAY HERE](https://lonerrasta143.github.io/Dots-and-Square-Game/)
 # How to play:
 
 1. Players take turns.
-2. On your turn, draw one line connecting two adjacent dots (horizontally or vertically).
+2. On your turn, draw one line connecting two adjacent dots by clicking between the two dots. (horizontally or vertically).
 3. Completing a square:
     -If your line completes the fourth side of a square, you claim that square.
     -You get another turn immediately.
