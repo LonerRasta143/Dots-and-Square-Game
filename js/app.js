@@ -3,16 +3,16 @@ const board = document.getElementById("board");
 const currentPlayerSP = document.getElementById("current-player")
 const p1ScoreSp = document.getElementById("p1-score");
 const p2ScoreSp = document.getElementById("p2-score");
-
+const SIZE = 3;
+const horizontal = [];
+const vertical = [];
+const boxes = [];
 
 let currentPlayer = 1;
 let p1Score = 0;
 let p2Score = 0;
 
-const SIZE = 3;
-const horizontal = [];
-const vertical = [];
-const boxes = [];
+
 
 //init game
 init();

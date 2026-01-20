@@ -1,7 +1,7 @@
 # Dots and Squares!
  Dots and Squares is a simple turn-based pencil-and-paper game where the goal is to claim more squares than your opponent by drawing lines between dots.
 
-Game Link: (Coming soon)
+Game Link: [PLAY HERE](https://lonerrasta143.github.io/Dots-and-Square-Game/)
 
 
 
@@ -32,14 +32,16 @@ Game Link: (Coming soon)
 
 
 ### Attributions:
-- /home/willi/code/projects/Dots-and-Square-Game/assets/images/Twokidsplayingdotsandsquareatchurch.jpeg
+- Picture of How To Play is from img.itch.zone
+- Picture of my sister and I (facebook)
 
 ### Technologies Used: 
 - Css
 - JS
 - HTML
 
-### mdn used:
+
+### Helpful mdn used:
 - getElementById() method
 - createElement() method
 - classList property
@@ -51,5 +53,7 @@ Game Link: (Coming soon)
 
 ## Next steps?
 - Make it online/mobile
-- Make board dots count adjustable
+- Make board dots count adjustable (add more dots)
 - Make it so that box auto fill with inputted (chosen)initial or color.
+- Change the background to be an image (paper)
+- Add sound for when the winner is selected
