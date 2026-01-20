@@ -33,11 +33,23 @@ Game Link: (Coming soon)
 
 ### Attributions:
 - /home/willi/code/projects/Dots-and-Square-Game/assets/images/Twokidsplayingdotsandsquareatchurch.jpeg
-- Canva.com Generate image of "Kids playing dots and squares in church"
+
 ### Technologies Used: 
 - Css
 - JS
 - HTML
 
+### mdn used:
+- getElementById() method
+- createElement() method
+- classList property
+- addEventListener() method 
+- CSS: Top & Left
+- CSS: border-radius 
+- Template literals (Template strings)
+- Arrays
+
 ## Next steps?
 - Make it online/mobile
+- Make board dots count adjustable
+- Make it so that box auto fill with inputted (chosen)initial or color.

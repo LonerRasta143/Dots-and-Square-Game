@@ -1,6 +1,6 @@
 body {
     min-height: 12px;
-    background-color: bisque;
+    background-color: rgb(236, 216, 179);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,37 +15,48 @@ body {
 
 #board {
     position: relative;
-    width: 800px;
-    height: 800px;
+    width: 700px;
+    height: 700px;
     box-shadow: 5px 5px 15px 5px #000;
 }
 
 .dot{
     background-color: brown;
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 50%;
 }
 
 .horline{
     position: absolute;
-    width: ;
-    height: ;
+    width: 176px ;
+    height: 10px ;
+    background: transparent;
+    cursor: pointer;
 }
 
 .verline{
     position: absolute;
-    width: ;
-    height: ;
+    width:10px;
+    height:176px ;
+    background: transparent;
+    cursor: pointer;
+}
+
+.horline.active,
+.verline.active {
+    background-color: black;
 }
 
 .box{
     position: absolute;
     display: flex;
     align-items: center;
-    width: ;
-    height: ;
+    width:12px ;
+    height:12px ;
     justify-content: center;
     font-size: 24px;
     font-weight: bold;
-    color: hwb(0 3% 76%);
+    color: hwb(0 4% 7%);
 }
