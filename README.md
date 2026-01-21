@@ -38,6 +38,8 @@ Game Link: [PLAY HERE](https://lonerrasta143.github.io/Dots-and-Square-Game/)
 ### Attributions:
 - Picture of How To Play is from img.itch.zone
 - Picture of my sister and I (facebook)
+- Winner sound: https://pixabay.com/sound-effects/search/winner/
+- Dots and square logo: made via Canva.com
 
 ### Technologies Used: 
 - Css
