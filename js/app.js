@@ -110,6 +110,12 @@ function claimBox(r, c) {
     else p2Score++
     updateScore();
 }
+//make playSound a function
+function playSound(src){
+    const sound = new Audio(src);
+    sound.play()
+}
+
 //update score
 function updateScore() {
     p1ScoreSp.textContent = p1Score;
@@ -119,6 +125,7 @@ function updateScore() {
 //check for winner
 function checkForWinnerTie() {
     if (p1Score + p2Score === SIZE * SIZE) {
+        playSound("assets/sounds/winner.mp3")
         if (p1Score > p2Score) {
             console.log("Player 1 Won!");
         } else if (p2Score > p1Score) {

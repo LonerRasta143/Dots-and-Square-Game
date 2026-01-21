@@ -1,4 +1,8 @@
+![Dots and square logo with dots lines and square](assets/images/DotsandSquares.png)
+
+
 # Dots and Squares!
+
  Dots and Squares is a simple turn-based pencil-and-paper game where the goal is to claim more squares than your opponent by drawing lines between dots.
 
 Game Link: [PLAY HERE](https://lonerrasta143.github.io/Dots-and-Square-Game/)
@@ -57,4 +61,4 @@ Game Link: [PLAY HERE](https://lonerrasta143.github.io/Dots-and-Square-Game/)
 - Make board dots count adjustable (add more dots)
 - Make it so that box auto fill with inputted (chosen)initial or color.
 - Change the background to be an image (paper)
-- Add sound for when the winner is selected
+- ~~Add sound for when the winner is selected~~
